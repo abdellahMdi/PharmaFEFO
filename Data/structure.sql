@@ -1,3 +1,7 @@
+CREATE DATABASE pharma_fefo ;
+
+USE pharma_fefo ;
+
 -- 1. Table for users
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -7,7 +11,7 @@ CREATE TABLE users (
     role VARCHAR(100) NOT NULL
 );
 
--- 2. Table for medicines
+-- 2. Table for medicinesa
 CREATE TABLE medicaments (
     id INT AUTO_INCREMENT PRIMARY KEY,
     code_cip VARCHAR(50) NOT NULL UNIQUE, -- Added UNIQUE because every medicine has one unique CIP code
